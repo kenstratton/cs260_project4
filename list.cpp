@@ -4,16 +4,15 @@ using namespace std;
 
 // Structure of a list element
 struct ELMT {
-    int id; // Element Data 1: Location (positive integer)
-    int value; // Element Data 2: Integer value
+    int id;            // Element Data 1: Location (positive integer)
+    int value;         // Element Data 2: Integer value
     struct ELMT *next; // Element Data 3: Pointer indicates an address of a linked element OR NULL
 };
 
-// Head element in a list
-static struct ELMT *head = NULL;
-struct ELMT * elmt; // could be a HEAD element OR a elemen NEXT to a new element
-struct ELMT * new_elmt; // A new element
-struct ELMT * prev_elmt; // One before a new element
+static struct ELMT *head = NULL; // A head element in a list
+struct ELMT * elmt;              // A element used for searching or deleting a target
+struct ELMT * new_elmt;          // A new element
+struct ELMT * prev_elmt;         // A element located before a new element
 
 
 // Check if a list is empty
